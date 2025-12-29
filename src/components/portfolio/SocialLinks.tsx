@@ -1,62 +1,41 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Instagram, Youtube, Mail, MessageCircle, Coffee } from "lucide-react";
+import { Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 
 const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com",
+    href: "https://github.com/Oliyad-oli",
     color: "hover:text-foreground hover:border-foreground",
     bgHover: "hover:bg-foreground/10",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/oliyaddandana657",
     color: "hover:text-[#0077B5] hover:border-[#0077B5]",
     bgHover: "hover:bg-[#0077B5]/10",
   },
   {
     name: "Twitter/X",
     icon: Twitter,
-    href: "https://twitter.com",
+    href: "https://x.com/olidan657?t=GTBMgWoGxg5WLDBRk_IA3g&s=35",
     color: "hover:text-foreground hover:border-foreground",
     bgHover: "hover:bg-foreground/10",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/oliyaaddandana?igsh=MXRoZmYyN3lzanQ5Mg==",
     color: "hover:text-[#E4405F] hover:border-[#E4405F]",
     bgHover: "hover:bg-[#E4405F]/10",
   },
   {
-    name: "YouTube",
-    icon: Youtube,
-    href: "https://youtube.com",
-    color: "hover:text-[#FF0000] hover:border-[#FF0000]",
-    bgHover: "hover:bg-[#FF0000]/10",
-  },
-  {
-    name: "Discord",
-    icon: MessageCircle,
-    href: "https://discord.com",
-    color: "hover:text-[#5865F2] hover:border-[#5865F2]",
-    bgHover: "hover:bg-[#5865F2]/10",
-  },
-  {
     name: "Email",
     icon: Mail,
-    href: "mailto:hello@alexchen.dev",
+    href: "mailto:oliyaddandana@gmail.com",
     color: "hover:text-primary hover:border-primary",
     bgHover: "hover:bg-primary/10",
-  },
-  {
-    name: "Buy Me Coffee",
-    icon: Coffee,
-    href: "https://buymeacoffee.com",
-    color: "hover:text-[#FFDD00] hover:border-[#FFDD00]",
-    bgHover: "hover:bg-[#FFDD00]/10",
   },
 ];
 

@@ -23,14 +23,14 @@ export function ContactSection() {
             className="text-center mb-16"
           >
             <span className="text-primary font-mono text-sm mb-4 block">
-              {'<contact>'}
+              {"<contact>"}
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
               Get In <span className="text-gradient">Touch</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind or just want to chat? Feel free to reach out.
-              I'm always open to discussing new opportunities.
+              Have a project in mind or just want to chat? Feel free to reach
+              out. I'm always open to discussing new opportunities.
             </p>
           </motion.div>
 
@@ -44,20 +44,29 @@ export function ContactSection() {
             >
               <div>
                 <h3 className="text-2xl font-display font-bold mb-6">
-                  Let's create something 
+                  Let's create something
                   <span className="text-gradient"> amazing</span> together
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm currently available for freelance projects and full-time positions.
-                  Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                  I'm currently available for freelance projects and full-time
+                  positions. Whether you have a question or just want to say hi,
+                  I'll try my best to get back to you!
                 </p>
               </div>
 
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: "Email", value: "hello@alexchen.dev" },
-                  { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-                  { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+                  {
+                    icon: Mail,
+                    label: "Email",
+                    value: "oliyaddandana@gmail.com",
+                  },
+                  { icon: Phone, label: "Phone", value: "+251 962950893" },
+                  {
+                    icon: MapPin,
+                    label: "Location",
+                    value: "Ethiopia, Addis Ababa",
+                  },
                 ].map((item, index) => (
                   <motion.div
                     key={item.label}
@@ -71,35 +80,13 @@ export function ContactSection() {
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">{item.label}</div>
+                      <div className="text-sm text-muted-foreground">
+                        {item.label}
+                      </div>
                       <div className="font-medium">{item.value}</div>
                     </div>
                   </motion.div>
                 ))}
-              </div>
-
-              {/* Quick Links */}
-              <div className="flex gap-4 flex-wrap">
-                <Button
-                  variant="outline"
-                  className="rounded-full border-primary/50 hover:bg-primary hover:text-primary-foreground"
-                  asChild
-                >
-                  <a href="#" className="flex items-center gap-2">
-                    Download Resume
-                    <ArrowUpRight className="w-4 h-4" />
-                  </a>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="rounded-full border-secondary/50 hover:bg-secondary hover:text-secondary-foreground"
-                  asChild
-                >
-                  <a href="#" className="flex items-center gap-2">
-                    Schedule Call
-                    <ArrowUpRight className="w-4 h-4" />
-                  </a>
-                </Button>
               </div>
             </motion.div>
 
@@ -109,39 +96,53 @@ export function ContactSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <form className="glass rounded-2xl p-8 space-y-6">
+              <form
+                action="https://formspree.io/f/mbdjgozw"
+                method="POST"
+                className="glass rounded-2xl p-8 space-y-6"
+              >
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-sm font-medium">Name</label>
                     <Input
+                      name="name"
                       placeholder="John Doe"
                       className="bg-muted/50 border-border/50 focus:border-primary"
+                      required
                     />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium">Email</label>
                     <Input
                       type="email"
+                      name="email"
                       placeholder="john@example.com"
                       className="bg-muted/50 border-border/50 focus:border-primary"
+                      required
                     />
                   </div>
                 </div>
+
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Subject</label>
                   <Input
+                    name="subject"
                     placeholder="Project Inquiry"
                     className="bg-muted/50 border-border/50 focus:border-primary"
                   />
                 </div>
+
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Message</label>
                   <Textarea
+                    name="message"
                     placeholder="Tell me about your project..."
                     rows={5}
                     className="bg-muted/50 border-border/50 focus:border-primary resize-none"
+                    required
                   />
                 </div>
+
                 <Button
                   type="submit"
                   size="lg"
@@ -155,7 +156,7 @@ export function ContactSection() {
           </div>
 
           <span className="text-primary font-mono text-sm mt-16 block text-center">
-            {'</contact>'}
+            {"</contact>"}
           </span>
         </div>
       </div>

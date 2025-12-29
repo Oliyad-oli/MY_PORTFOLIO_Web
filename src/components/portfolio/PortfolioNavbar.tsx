@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -24,23 +24,27 @@ export function PortfolioNavbar() {
       <nav className="mx-4 mt-4">
         <div className="max-w-6xl mx-auto glass rounded-full px-6 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo */}
+            {/* Logo Section */}
             <motion.a
               href="#home"
               className="flex items-center gap-2 group"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="relative">
-                <Code2 className="w-8 h-8 text-primary" />
+              <div className="relative flex items-center w-12 h-12">
+                {/* Circular Logo Image */}
+                <img
+                  src="/ol.png"
+                  alt="Logo"
+                  className="h-full w-full object-cover rounded-full z-10"
+                />
+
+                {/* Glow Effect behind logo */}
                 <motion.div
                   className="absolute inset-0 bg-primary/30 rounded-full blur-lg"
                   animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 />
               </div>
-              <span className="font-display font-bold text-xl text-gradient">
-                AC
-              </span>
             </motion.a>
 
             {/* Desktop Navigation */}
@@ -59,9 +63,7 @@ export function PortfolioNavbar() {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Button
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6"
-              >
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
                 Let's Talk
               </Button>
             </div>
@@ -71,7 +73,11 @@ export function PortfolioNavbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 text-foreground"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>

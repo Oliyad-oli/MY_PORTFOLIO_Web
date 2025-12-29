@@ -4,40 +4,44 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online shopping platform with real-time inventory, payment processing, and admin dashboard.",
-    image: "🛒",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "Real-Time Chat Application",
+    description:
+      "A full-featured real-time chat application with user authentication, private and group messaging, online status, and media sharing.",
+    image: "💬",
+    // tags: ["React", "Node.js", "MongoDB", "Socket.io"],
     color: "from-neon-cyan/20 to-neon-purple/20",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Oliyad-oli",
+    live: "https://o-dgram-chat-app.vercel.app",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates, drag-and-drop, and team analytics.",
-    image: "📋",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
+    title: "Issue Reporting Application",
+    description:
+      "A collaborative issue reporting and tracking system with real-time updates, priority levels, status tracking, and team collaboration.",
+    image: "🐞",
+    // tags: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
     color: "from-neon-magenta/20 to-neon-yellow/20",
-    github: "#",
+    github: "https://github.com/Oliyad-oli",
     live: "#",
   },
   {
-    title: "AI Content Generator",
-    description: "AI-powered content creation platform that generates blog posts, social media content, and marketing copy.",
-    image: "🤖",
-    tags: ["React", "Python", "OpenAI", "FastAPI"],
+    title: "School Payment Management System",
+    description:
+      "A secure school payment platform for managing student fees, tuition payments, receipts, and real-time payment status tracking.",
+    image: "🏫",
+    // tags: ["React", "Python", "FastAPI", "PostgreSQL"],
     color: "from-neon-green/20 to-neon-cyan/20",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Oliyad-oli",
+    live: "",
   },
   {
-    title: "Crypto Dashboard",
-    description: "Real-time cryptocurrency tracking dashboard with portfolio management and price alerts.",
-    image: "📈",
-    tags: ["Vue.js", "Express", "WebSocket", "Chart.js"],
+    title: "Crypto Tracker Application",
+    description:
+      "A real-time cryptocurrency tracker that displays live prices, market trends, portfolio performance, and price alerts using live data streams.",
+    image: "₿",
+    // tags: ["Vue.js", "Express", "WebSocket", "Chart.js"],
     color: "from-neon-yellow/20 to-neon-magenta/20",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Oliyad-oli",
+    live: "https://crypto-tracker-system.vercel.app/",
   },
 ];
 
@@ -45,7 +49,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-mesh opacity-30" />
-      
+
       <div className="container relative z-10 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -56,14 +60,14 @@ export function ProjectsSection() {
             className="text-center mb-16"
           >
             <span className="text-primary font-mono text-sm mb-4 block">
-              {'<projects>'}
+              {"<projects>"}
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
               Featured <span className="text-gradient">Work</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of projects that showcase my skills and passion for creating 
-              impactful digital solutions.
+              A selection of projects that showcase my skills and passion for
+              creating impactful digital solutions.
             </p>
           </motion.div>
 
@@ -80,22 +84,26 @@ export function ProjectsSection() {
               >
                 <div className="glass rounded-2xl overflow-hidden h-full flex flex-col">
                   {/* Project Image */}
-                  <div className={`relative h-48 bg-gradient-to-br ${project.color} flex items-center justify-center overflow-hidden`}>
+                  <div
+                    className={`relative h-48 bg-gradient-to-br ${project.color} flex items-center justify-center overflow-hidden`}
+                  >
                     <span className="text-7xl group-hover:scale-110 transition-transform duration-500">
                       {project.image}
                     </span>
-                    
+
                     {/* Overlay on hover */}
-                    <motion.div
-                      className="absolute inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    >
+                    <motion.div className="absolute inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <Button
                         size="icon"
                         variant="outline"
                         className="rounded-full border-primary/50 hover:bg-primary hover:text-primary-foreground"
                         asChild
                       >
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="w-5 h-5" />
                         </a>
                       </Button>
@@ -104,7 +112,11 @@ export function ProjectsSection() {
                         className="rounded-full bg-primary text-primary-foreground"
                         asChild
                       >
-                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <ExternalLink className="w-5 h-5" />
                         </a>
                       </Button>
@@ -123,14 +135,14 @@ export function ProjectsSection() {
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
+                      {/* {project.tags.map((tag) => (
                         <span
                           key={tag}
                           className="px-3 py-1 text-xs font-mono bg-muted rounded-full text-muted-foreground"
                         >
                           {tag}
                         </span>
-                      ))}
+                      ))} */}
                     </div>
                   </div>
                 </div>
@@ -156,7 +168,7 @@ export function ProjectsSection() {
           </motion.div>
 
           <span className="text-primary font-mono text-sm mt-8 block text-center">
-            {'</projects>'}
+            {"</projects>"}
           </span>
         </div>
       </div>
