@@ -8,7 +8,7 @@ export function PortfolioHero() {
   // Function to handle CV download
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/my_cv.pdf";
+    link.href = "/oliad_ccv.pdf";
     link.download = "Oliad_Dandena_CV.pdf";
     document.body.appendChild(link);
     link.click();

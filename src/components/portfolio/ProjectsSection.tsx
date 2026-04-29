@@ -4,25 +4,16 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Real-Time Chat Application",
-    description:
-      "A full-featured real-time chat application with user authentication, private and group messaging, online status, and media sharing.",
-    image: "💬",
-    // tags: ["React", "Node.js", "MongoDB", "Socket.io"],
-    color: "from-neon-cyan/20 to-neon-purple/20",
-    github: "https://github.com/Oliyad-oli",
-    live: "https://o-dgram-chat-app.vercel.app",
-  },
-  {
-    title: "Issue Reporting Application",
-    description:
-      "A collaborative issue reporting and tracking system with real-time updates, priority levels, status tracking, and team collaboration.",
-    image: "🐞",
-    // tags: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-    color: "from-neon-magenta/20 to-neon-yellow/20",
-    github: "https://github.com/Oliyad-oli",
-    live: "#",
-  },
+  title: "Tax Audit Management System",
+  description:
+    "A comprehensive web-based system designed to streamline tax auditing processes, including case assignment, document management, audit tracking, reporting, and workflow automation for auditors and administrators.",
+  image: "📊",
+  // tags: ["React", "Spring Boot", "MySQL", "REST API"],
+  color: "from-neon-cyan/20 to-neon-purple/20",
+  github: "https://github.com/Oliyad-oli/tax-audit-management-frontend",
+  live: "https://tax-audit-management-frontend.vercel.app/",
+},
+  
   {
     title: "School Payment Management System",
     description:
