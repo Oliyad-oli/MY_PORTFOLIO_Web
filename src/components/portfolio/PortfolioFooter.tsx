@@ -65,7 +65,7 @@ export function PortfolioFooter() {
             className="text-center mt-8 pt-8 border-t border-border/30"
           >
             <p className="text-xs text-muted-foreground font-mono">
-              Built with React • TypeScript • Tailwind CSS • Framer Motion
+              {/* Built with React • TypeScript • Tailwind CSS • Framer Motion */}
             </p>
           </motion.div>
         </div>

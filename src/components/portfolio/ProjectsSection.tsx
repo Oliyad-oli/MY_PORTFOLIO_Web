@@ -4,16 +4,16 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-  title: "Tax Audit Management System",
-  description:
-    "A comprehensive web-based system designed to streamline tax auditing processes, including case assignment, document management, audit tracking, reporting, and workflow automation for auditors and administrators.",
-  image: "📊",
-  // tags: ["React", "Spring Boot", "MySQL", "REST API"],
-  color: "from-neon-cyan/20 to-neon-purple/20",
-  github: "https://github.com/Oliyad-oli/tax-audit-management-frontend",
-  live: "https://tax-audit-management-frontend.vercel.app/",
-},
-  
+    title: "Tax Audit Management System",
+    description:
+      "A comprehensive web-based system designed to streamline tax auditing processes, including case assignment, document management, audit tracking, reporting, and workflow automation for auditors and administrators.",
+    image: "📊",
+    // tags: ["React", "Spring Boot", "MySQL", "REST API"],
+    color: "from-neon-cyan/20 to-neon-purple/20",
+    github: "https://github.com/Oliyad-oli/tax-audit-management-frontend",
+    live: "https://tax-audit-management-frontend.vercel.app/",
+  },
+
   {
     title: "School Payment Management System",
     description:
@@ -22,7 +22,7 @@ const projects = [
     // tags: ["React", "Python", "FastAPI", "PostgreSQL"],
     color: "from-neon-green/20 to-neon-cyan/20",
     github: "https://github.com/Oliyad-oli",
-    live: "",
+    live: "https://school-payment-delta.vercel.app/",
   },
   {
     title: "Crypto Tracker Application",
@@ -126,14 +126,6 @@ export function ProjectsSection() {
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {/* {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-3 py-1 text-xs font-mono bg-muted rounded-full text-muted-foreground"
-                        >
-                          {tag}
-                        </span>
-                      ))} */}
                     </div>
                   </div>
                 </div>
@@ -149,12 +141,19 @@ export function ProjectsSection() {
             className="text-center mt-12"
           >
             <Button
+              asChild
               variant="outline"
               size="lg"
               className="rounded-full px-8 border-primary/50 hover:bg-primary hover:text-primary-foreground"
             >
-              View All Projects
-              <ArrowUpRight className="w-4 h-4 ml-2" />
+              <a 
+                href="https://github.com/Oliyad-oli" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                View All Projects 
+                <ArrowUpRight className="w-4 h-4 ml-2" />
+              </a>
             </Button>
           </motion.div>
 
@@ -163,6 +162,7 @@ export function ProjectsSection() {
           </span>
         </div>
       </div>
+      
     </section>
   );
 }
