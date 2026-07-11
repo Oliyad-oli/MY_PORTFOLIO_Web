@@ -51,7 +51,7 @@ export function AboutSection() {
                     <div className="text-center">
                       <div className="text-8xl mb-4"></div>
                       <p className="text-muted-foreground font-mono text-sm">
-                        <img src="/oliiman.jpg" alt="" />
+                        <img src="/oliyad.jpg" alt="" />
                       </p>
                     </div>
                   </div>

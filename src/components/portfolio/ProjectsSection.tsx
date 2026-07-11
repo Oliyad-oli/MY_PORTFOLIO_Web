@@ -13,6 +13,16 @@ const projects = [
     github: "https://github.com/Oliyad-oli/tax-audit-management-frontend",
     live: "https://tax-audit-management-frontend.vercel.app/",
   },
+  {
+    title: "Hospital Management Web System",
+    description:
+      "A comprehensive healthcare platform for digital medical records, doctor scheduling, patient registration, billing automation, and pharmacy inventory management.",
+    image: "🏥",
+    // tags: ["React", "Node.js", "MongoDB", "Express"],
+    color: "from-neon-purple/20 to-neon-magenta/20",
+    github: "https://github.com/Oliyad-oli",
+    live: "https://hospital-management-system.vercel.app/",
+  },
 
   {
     title: "School Payment Management System",
