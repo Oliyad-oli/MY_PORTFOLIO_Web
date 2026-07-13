@@ -20,8 +20,8 @@ const projects = [
     image: "🏥",
     // tags: ["React", "Node.js", "MongoDB", "Express"],
     color: "from-neon-purple/20 to-neon-magenta/20",
-    github: "https://github.com/Oliyad-oli",
-    live: "https://hospital-management-system.vercel.app/",
+    github: "https://github.com/Oliyad-oli/forlife_website",
+    live: "https://forlife-website-ruddy.vercel.app/",
   },
 
   {
