@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Tax Audit Management System",
-    description:
-      "A comprehensive web-based system designed to streamline tax auditing processes, including case assignment, document management, audit tracking, reporting, and workflow automation for auditors and administrators.",
-    image: "📊",
-    // tags: ["React", "Spring Boot", "MySQL", "REST API"],
-    color: "from-neon-cyan/20 to-neon-purple/20",
-    github: "https://github.com/Oliyad-oli/tax-audit-management-frontend",
-    live: "https://tax-audit-management-frontend.vercel.app/",
+    title: "Centra Mart & Cafe",
+  description:
+    "A premium supermarket and café e-commerce application located in Addis Ababa, featuring online shopping, product catalog, and seamless ordering.",
+  image: "🛒", // or whatever icon/image path you prefer
+  // tags: ["React", "TypeScript", "TanStack Start", "Tailwind CSS"],
+  color: "from-neon-cyan/20 to-neon-purple/20",
+  github: "https://github.com/Oliyad-oli/centraMart_Supermarket",
+  live: "https://centra-mart-supermarket.vercel.app/",
   },
   {
     title: "Hospital Management Web System",
